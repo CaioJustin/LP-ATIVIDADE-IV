@@ -3,7 +3,7 @@
 #include <locale.h>
 #include <string.h>
 
-#define TAM 2
+#define TAM 3
 
 struct dados_contatos {
     char nome[200];
@@ -20,7 +20,7 @@ void pesquisarContato(struct dados_contatos *contatos, char *contato) {
             return;
         }
     }
-    printf("Contato n„o encontrado. \n");
+    printf("Contato n√£o encontrado. \n");
 }
 
 int main() {
@@ -30,9 +30,9 @@ int main() {
     char contato[200];
     int i;
    
-    // Solicitando dados do usu·rio.
+    // Solicitando dados do usu√°rio.
     for (i = 0; i < TAM; i++) {
-        printf("\nDigite os dados do %d∫ contato: \n", i + 1);
+        printf("\nDigite os dados do %d¬∫ contato: \n", i + 1);
         printf("Nome: ");
         gets(contatos[i].nome);
        
